@@ -11,7 +11,7 @@ import com.example.demo.types.Response;
 @RequestMapping("/test")
 public class Controller {
 
-    @GetMapping
+    @GetMapping("/endpoint")
     public ResponseEntity<Response<String>> testEndpoint() {
         return ResponseEntity.ok(new Response<>("success", "this is data"));
     }
